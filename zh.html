@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#f4f5f6" />
+  <meta name="description" content="Ziyang Shen 工程项目作品集：基于人工肌肉驱动的仿生软体机器人心脏辅助套筒。" />
+  <meta property="og:title" content="仿生软体机器人心脏辅助套筒 — Ziyang Shen" />
+  <meta property="og:description" content="机械设计、非线性有限元分析、硅胶成型制造与充水柔性腔体台架测试。" />
+  <title>仿生软体机器人心脏辅助套筒 — Ziyang Shen</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2230%22 fill=%22%23101518%22/><text x=%2250%22 y=%2264%22 text-anchor=%22middle%22 font-size=%2243%22 font-family=%22Arial%22 font-weight=%22700%22 fill=%22white%22>ZS</text></svg>">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#top">跳转到正文</a>
+  <div class="ambient" aria-hidden="true"></div>
+  <header class="nav-shell">
+    <nav class="nav" aria-label="主导航">
+      <a class="brand" href="#top" aria-label="返回顶部">ZS</a>
+      <div class="nav-links">
+        <a href="#overview">项目概览</a>
+        <a href="#scope">工程工作</a>
+        <a href="#validation">实验验证</a>
+        <a href="#analysis">方案评估</a>
+      </div>
+      <div class="nav-actions"><a class="nav-cta" href="#results">实验结果</a><a class="language-switch" href="index.html" lang="en" hreflang="en">English</a></div>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero shell">
+      <div class="hero-copy reveal">
+        <p class="eyebrow">新南威尔士大学（UNSW Sydney）· 机械工程 · 2026</p>
+        <h1>仿生软体机器人<br><span>心脏辅助套筒</span></h1>
+        <p class="hero-deck">以热驱动的加捻卷曲人工肌肉（TCAM）为执行器，探索心脏外部压缩辅助的台架原型。项目涵盖执行器性能表征、机械设计、非线性有限元分析（FEA）、硅胶成型制造，以及充水柔性腔体上的台架测试。</p>
+        <div class="hero-tags" aria-label="项目方向">
+          <span>软体机器人</span><span>人工肌肉</span><span>CAD</span><span>有限元分析</span><span>原型实验</span>
+        </div>
+      </div>
+      <div class="hero-art reveal" data-delay="90">
+        <div class="hero-halo" aria-hidden="true"></div>
+        <figure class="heart-stage">
+          <img src="assets/hero-heart.png" alt="心脏与软体机器人套筒概念示意图" />
+        </figure>
+        <div class="hero-note glass">
+          <span class="mini-label">概念示意</span>
+          <strong>外部压缩辅助的概念示意。实际制造的原型见下方台架实验。</strong>
+        </div>
+      </div>
+      <div class="hero-metrics reveal" data-delay="150">
+        <article><strong>12.4%</strong><span>独立执行器最大实测收缩率</span></article>
+        <article><strong>64 mm</strong><span>集成实验最大水柱上升量</span></article>
+        <article><strong>3 次</strong><span>每个测试条件的重复次数</span></article>
+        <article><strong>1 套</strong><span>完成台架测试的集成原型</span></article>
+      </div>
+    </section>
+
+    <section id="overview" class="shell section-gap">
+      <div class="section-kicker reveal">
+        <p class="eyebrow">项目概览</p>
+        <h2>从执行器开发<br><span>到集成样机验证。</span></h2>
+        <p>项目分为执行器开发、结构设计、有限元分析、原型制造、实验测试和方案评估六个阶段，并用实验结果辅助设计判断。</p>
+      </div>
+      <div class="overview-grid reveal" data-delay="70">
+        <article><span class="step-no">01</span><div><strong>执行器开发</strong><p>制备并测试热驱动人工肌肉，获得基础收缩性能。</p></div></article>
+        <article><span class="step-no">02</span><div><strong>机械设计</strong><p>完成软体套筒及人工肌肉集成结构的 CAD 设计。</p></div></article>
+        <article><span class="step-no">03</span><div><strong>有限元分析</strong><p>比较不同方案的大变形响应与力传递表现。</p></div></article>
+        <article><span class="step-no">04</span><div><strong>原型制造</strong><p>完成硅胶部件制造、装配与集成样机搭建。</p></div></article>
+        <article><span class="step-no">05</span><div><strong>实验验证</strong><p>搭建台架，记录重复驱动及冷却过程中的水柱位移。</p></div></article>
+        <article><span class="step-no">06</span><div><strong>方案评估</strong><p>结合实验观察和结构仿真结果评估设计方案。</p></div></article>
+      </div>
+    </section>
+
+    <section id="scope" class="dark-band">
+      <div class="shell section-gap">
+        <div class="story-head reveal">
+          <p class="eyebrow light">工程工作</p>
+          <h2>设计、仿真、制造<br><span>与实验验证。</span></h2>
+        </div>
+        <div class="scope-grid">
+          <article class="scope-card reveal"><span>01</span><h3>人工肌肉</h3><p>执行器制备、热响应测试与收缩性能表征。</p></article>
+          <article class="scope-card reveal" data-delay="50"><span>02</span><h3>机械设计</h3><p>CAD 建模、柔性结构设计与原型集成。</p></article>
+          <article class="scope-card reveal" data-delay="100"><span>03</span><h3>非线性有限元</h3><p>针对大变形结构进行建模，并比较结构响应与力传递。</p></article>
+          <article class="scope-card reveal" data-delay="150"><span>04</span><h3>原型制造</h3><p>利用模具成型制造硅胶部件，完成装配与原型迭代。</p></article>
+          <article class="scope-card reveal" data-delay="200"><span>05</span><h3>实验测试</h3><p>自建测试台架、重复测量并比较不同原型方案。</p></article>
+          <article class="scope-card reveal" data-delay="250"><span>06</span><h3>工程分析</h3><p>结合实验观察和有限元结果评估系统级性能。</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="shell section-gap actuator-story">
+      <div class="section-kicker reveal">
+        <p class="eyebrow">人工肌肉表征</p>
+        <h2>先测执行器性能，<br><span>再进行系统集成。</span></h2>
+        <p>人工肌肉在装入套筒前进行独立测试，测量其单独工作时的收缩响应。集成后的实际收缩还受负载和结构约束影响。</p>
+      </div>
+      <div class="actuator-layout">
+        <figure class="media-card reveal">
+          <img loading="lazy" decoding="async" src="assets/tcam-fiber.png" alt="制备完成的加捻卷曲人工肌肉" />
+          <figcaption>制备完成的加捻卷曲人工肌肉</figcaption>
+        </figure>
+        <article class="metric-feature reveal" data-delay="80">
+          <span class="mini-label">实测结果</span>
+          <strong>12.4%</strong>
+          <h3>最大执行器收缩率</h3>
+          <p>独立执行器测试中测得的最大轴向收缩率为 12.4%。该指标表示执行器长度变化，不代表腔体体积缩减率。</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="validation" class="validation-wrap">
+      <div class="shell section-gap">
+        <div class="section-kicker reveal light-copy">
+          <p class="eyebrow light">台架实验</p>
+          <h2>把集成样机输出<br><span>转化为可直接读取的位移。</span></h2>
+          <p>软体套筒安装在充水柔性腔体外，腔体连接透明测量管。直接测量的输出是管内液面上升量，用于间接反映驱动过程中的液体排移。</p>
+        </div>
+        <div class="video-stage reveal" data-delay="60">
+          <video src="assets/validation-demo.mp4" controls muted playsinline preload="metadata" poster="assets/before.png" aria-label="台架驱动演示视频">浏览器无法播放此视频。<a href="assets/validation-demo.mp4">打开视频文件</a></video>
+          <div class="video-shade"></div>
+          <div class="video-result">
+            <span class="mini-label">最大实测上升量</span>
+            <strong>64 mm</strong>
+            <p>台架上的套筒驱动产生了可测量的水柱上升。</p>
+          </div>
+        </div>
+        <div class="method-line reveal" data-delay="110">
+          <span>人工肌肉驱动</span><i>→</i><span>套筒收缩</span><i>→</i><span>液体排移</span><i>→</i><span>水柱上升</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="results" class="shell section-gap outcomes">
+      <div class="section-kicker reveal">
+        <p class="eyebrow">实验结果</p>
+        <h2>集成样机的实测表现。</h2>
+        <p>台架实验观察到驱动时水柱上升，与充水腔体受到压缩的预期一致。以下数值描述的是该台架及其测试条件下的表现。</p>
+      </div>
+      <div class="before-after reveal">
+        <figure><span class="photo-label">驱动前</span><img loading="lazy" decoding="async" src="assets/before.png" alt="驱动前的台架实验状态" /></figure>
+        <div class="delta-card"><span>测试系列中的最大值</span><strong>64 mm</strong><small>水柱上升量</small></div>
+        <figure><span class="photo-label">驱动后</span><img loading="lazy" decoding="async" src="assets/after.png" alt="驱动后液面升高的台架实验状态" /></figure>
+      </div>
+      <div class="result-grid reveal" data-delay="90">
+        <article><span>执行器</span><strong>12.4%</strong><p>执行器独立测试中的最大实测轴向收缩率。</p></article>
+        <article><span>集成样机</span><strong>64 mm</strong><p>台架实验中测得的最大水柱上升量。</p></article>
+        <article><span>重复测试</span><strong>3 次</strong><p>每个测试条件进行 3 次重复。该样本量不足以证明长期耐久性。</p></article>
+        <article><span>冷却阶段</span><strong>观察到回落</strong><p>冷却后液面向初始位置回落。此处未量化恢复时间和残余偏移。</p></article>
+      </div>
+
+      <div class="measurement-note">
+        <h3>如何理解测量结果</h3>
+        <p>64 mm 表示液面位移，不是体积、流量或射血分数。对于内截面均匀的测量管，可用 <span class="formula">ΔV = A · Δh</span> 估算排移液体体积，其中 A 为标定后的管内截面积，Δh 为液柱位移。若进一步将其等同于腔体体积变化，还需保证泄漏、残留气体压缩和管路弹性变形的影响可忽略，并考虑热膨胀影响。</p>
+        <p>照片展示驱动前后的状态。64 mm 是测试系列中的最大值；仅凭这两张照片不能对该数值进行标定核验。</p>
+      </div>
+    </section>
+
+    <section id="analysis" class="insight-wrap">
+      <div class="shell section-gap">
+        <div class="insight-grid">
+          <div class="insight-copy reveal">
+            <p class="eyebrow light">方案评估</p>
+            <h2>结合实验与仿真，<br>评估设计方案。</h2>
+            <p>不同原型配置的系统输出存在差异。项目结合实验观察与非线性有限元分析，研究结构变形及可能的力传递限制。仿真用于辅助解释；此处未展示仿真与实测结果的定量吻合程度。</p>
+          </div>
+          <div class="insight-cards reveal" data-delay="80">
+            <article><span>实验</span><strong>比较不同配置的实际输出</strong><p>重复测量用于初步比较不同配置。量化重复性还需结合各次读数及其离散程度。</p></article>
+            <article><span>仿真</span><strong>有限元用于解释结构响应</strong><p>在所用模型假设和边界条件下，大变形分析帮助解释可能的结构响应机制。</p></article>
+            <article><span>设计</span><strong>根据结果确定后续迭代方向</strong><p>原型修改优先级来自实验与仿真的共同判断，而不是仅凭概念假设。</p></article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="shell section-gap contribution">
+      <div class="section-kicker reveal">
+        <p class="eyebrow">项目总结</p>
+        <h2>完整的机械工程项目实践。</h2>
+      </div>
+      <div class="contribution-grid reveal" data-delay="70">
+        <article><strong>概念开发</strong><p>将仿生心脏辅助思路转化为可制造、可测试的机械原型。</p></article>
+        <article><strong>CAD 与制造</strong><p>完成结构设计、硅胶部件制造以及集成装配。</p></article>
+        <article><strong>非线性分析</strong><p>使用有限元比较大变形响应并辅助方案评估。</p></article>
+        <article><strong>实验设计</strong><p>建立台架测试方法，测量集成样机驱动时的水柱位移。</p></article>
+        <article><strong>数据评估</strong><p>通过重复测量，对不同原型配置进行初步比较。</p></article>
+        <article><strong>工程迭代</strong><p>结合仿真和物理测试结果推进后续设计。</p></article>
+      </div>
+    </section>
+
+
+    <section class="shell section-gap limitations" id="limitations">
+      <div class="section-kicker">
+        <p class="eyebrow">验证范围与后续测量</p>
+        <h2>机械原理验证。</h2>
+        <p>充水柔性腔体提供了简化的测试负载。现有结果尚不能证明原型具备生理条件下的心脏辅助能力。</p>
+      </div>
+      <div class="contribution-grid">
+        <article><strong>执行器工作条件</strong><p>收缩数据需结合初始长度、预载荷、加热输入、执行器温度及加热／冷却时间理解。装入套筒后，可用行程也可能改变。</p></article>
+        <article><strong>测量不确定度</strong><p>补充管内径标定、每个条件下的 3 次读数及其离散程度。增加不驱动执行器的热对照，有助于区分机械排移与加热影响。</p></article>
+        <article><strong>心脏辅助相关性能</strong><p>进一步评估需测量压力–体积响应、循环泵送表现、加热／冷却速率、组织接触面温度和耐久性。仅凭液面上升尚不能确定这些性能。</p></article>
+      </div>
+      <p class="reference-note">研究背景：<a href="https://doi.org/10.1126/science.1246906">Haines 等，2014：热驱动卷曲聚合物人工肌肉</a>；<a href="https://doi.org/10.1126/scitranslmed.aaf3925">Roche 等，2017：软体机器人心脏套筒</a>。文献用于介绍研究背景，其中的性能结果不属于本项目原型。</p>
+    </section>
+
+    <section class="closing shell reveal">
+      <p class="eyebrow light">Ziyang Shen · 机械工程</p>
+      <h2>仿生软体机器人<br>心脏辅助<br><span>套筒。</span></h2>
+      <div class="closing-meta">
+        <span>新南威尔士大学 · 2026</span>
+        <span>软体机器人 · 人工肌肉 · 有限元分析 · 实验验证</span>
+      </div>
+    </section>
+  </main>
+  <footer><span>© 2026 Ziyang Shen</span><span>工程项目作品集</span></footer>
+  <script src="script.js"></script>
+</body>
+</html>
